@@ -1,0 +1,2497 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-26",
+  "days_note": "days: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 0=Sunday. Every station has separate Monday-Friday, Saturday and Sunday entries, even when Saturday and Sunday are identical. Times are local station time in the station's timezone field. Entries never cross midnight: an overnight programme is split into a 20:00-24:00 entry and a 00:00-06:00 entry on the following day.",
+  "notes": [
+    "YES 933 is the previously verified v3 (2026-11-23), copied unchanged.",
+    "melisten grids (987 / CAPITAL 958 / LOVE 972) do not print times on cells; times were read from cell edges against the hourly header. Hour boundaries are reliable, minute-level reading has about 10 minutes of uncertainty.",
+    "Entries with verified:false are template fills or boundary interpretations, not read from the official schedule. Search the file for verified:false to find every slot Evan needs to check or edit.",
+    "883 JIA and POWER 98 publish no schedule; their whole week is the station default_program from stations.json.",
+    "HitFM uses the 北部 (n1077) grid only.",
+    "This file is meant to live next to stations.json in radio/ (radio/schedules.json). The app looks up the current programme by converting the head-unit UTC time into the station's timezone, then matching days + start/end."
+  ],
+  "stations": [
+    {
+      "station_id": "yes933",
+      "name": "YES 933",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://www.melisten.sg/radio/yes-933/schedule",
+      "last_verified": "2026-11-23",
+      "verification_status": "VERIFIED against melisten rendered page 2026-11-23 — full week 00:00-24:00 covered; see _verification_method for the grid-reading caveat",
+      "default_program": "好歌不停播",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "好歌不停播",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "大咖一起来",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "12:00",
+          "program": "午刻乐乐 (AM)",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "12:00",
+          "end": "16:00",
+          "program": "午刻乐乐 (PM)",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "双节坤佳",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "Yeah 夜不打烊",
+          "verified": true,
+          "note": "Page shows two adjacent cells 20:00-23:00 and 23:00-24:00, same name — merged here; also written YEAH夜不打烊 in earlier drafts"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "11:30",
+          "program": "好歌不停播",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "11:30",
+          "end": "12:00",
+          "program": "最强韩风",
+          "verified": true,
+          "note": "Saturday link text has no '榜'; Sunday is 最强韩风榜. Display was truncated in the screenshot, full name taken from the page link text."
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "SPOP听我唱",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "20:00",
+          "program": "周末DJ陪你听歌",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "顶尖金曲 REWIND",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "11:30",
+          "program": "好歌不停播",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "11:30",
+          "end": "12:00",
+          "program": "最强韩风榜",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "醉心龙虎榜",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "20:00",
+          "program": "周末DJ陪你听歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "顶尖金曲 REWIND",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "987fm",
+      "name": "987 FM",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://www.melisten.sg/radio/987/schedule",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from melisten rendered grid; hour boundaries reliable, minute-level about 10 min uncertainty",
+      "default_program": "Singapore’s Number One Hit Music Radio Station",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "The Shock Circuit with Sonia & Joakim",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "Lunch Date with Ann Nicole",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "The Halftime Show with Louisa",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "17:00",
+          "end": "20:00",
+          "program": "Drive Thru with Natasha",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "The Down Low with Germaine & Avery",
+          "verified": true
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "20:00",
+          "end": "22:00",
+          "program": "987 Top 10 at 10",
+          "verified": true
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "The Down Low with Germaine & Avery",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "21:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "987 Indiego",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "18:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "18:00",
+          "end": "19:00",
+          "program": "987 Top 10 at 10",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "19:00",
+          "end": "21:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "987 Indiego",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "Singapore’s No. 1 Hit Music Station",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "capital958",
+      "name": "CAPITAL 958",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://www.melisten.sg/radio/capital-958/schedule",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from melisten rendered grid; hour boundaries reliable, minute-level about 10 min uncertainty",
+      "default_program": "资讯第一台",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "年代金曲，纯粹.歌",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "城市早点名",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "13:00",
+          "program": "城市 ING",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "13:00",
+          "end": "15:00",
+          "program": "城市同学会",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "program": "城市小管家",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "17:00",
+          "end": "20:00",
+          "program": "城市 HIGH 下班",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "23:00",
+          "program": "城市夜派对",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "年代金曲，纯粹.歌",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "年代金曲，纯粹.歌",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "周末早早起（六）",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "城市蓝天",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "周末心曲",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "17:00",
+          "end": "20:00",
+          "program": "抓住周末的尾巴",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "周末报嘉音",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "年代金曲，纯粹.歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "周末早早起（日）",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "城市蓝天",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "周末心曲",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "17:00",
+          "end": "20:00",
+          "program": "抓住周末的尾巴",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "夜来欢语声",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "love972",
+      "name": "LOVE 972",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://www.melisten.sg/radio/love-972/schedule",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from melisten rendered grid; hour boundaries reliable, minute-level about 10 min uncertainty. The 20:00-23:00 Tue-Fri name is as read from the grid: '811 那坚房'.",
+      "default_program": "享受生活，感受音乐",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "最爱K歌",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "11:00",
+          "program": "早安！玉建煌崇",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "11:00",
+          "end": "14:00",
+          "program": "蔡蔡郭",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "最爱粉TASTIC",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "17:00",
+          "end": "20:00",
+          "program": "爱会圣莉",
+          "verified": true
+        },
+        {
+          "days": [
+            1
+          ],
+          "start": "20:00",
+          "end": "23:00",
+          "program": "原来那一年",
+          "verified": true
+        },
+        {
+          "days": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "23:00",
+          "program": "811 那坚房",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "最爱K歌",
+          "verified": true
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "周公讲鬼",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "12:00",
+          "program": "最爱K歌",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "12:00",
+          "end": "20:00",
+          "program": "周末快乐点！不间断的最爱K歌，以及周末DJ陪你快乐度过。",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "原来那一年",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "program": "历久迷新谣",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "最爱K歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "12:00",
+          "program": "最爱K歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "20:00",
+          "program": "周末快乐点！不间断的最爱K歌，以及周末DJ陪你快乐度过。",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "20:00",
+          "end": "23:00",
+          "program": "走过岁月的歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "最爱K歌",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "ufm1003",
+      "name": "UFM 1003",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://audio.sph.com.sg/ufm1003/",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from SPH Audio day panels (times printed on the page, cross-checked against show pages). Hours with no show listed are filled with the station default_program as a template (verified:false).",
+      "default_program": "U选好歌，非听不可",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed 23:00-06:00"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "《The PLAY Show》",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "13:00",
+          "program": "我是你的咖啡音",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "13:00",
+          "end": "16:00",
+          "program": "茶于饭后",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "啦啦啦4到8",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "23:00",
+          "program": "夜搭子",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed 23:00-06:00"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "10:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "周末班",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "15:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "15:00",
+          "end": "19:00",
+          "program": "周末班",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "19:00",
+          "end": "24:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "10:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "周末班",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "15:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "15:00",
+          "end": "19:00",
+          "program": "周末班",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "19:00",
+          "end": "24:00",
+          "program": "U选好歌，非听不可",
+          "verified": false,
+          "note": "Template fill: no show listed"
+        }
+      ]
+    },
+    {
+      "station_id": "haofm963",
+      "name": "好FM 963",
+      "timezone": "Asia/Singapore",
+      "source_url": "https://audio.sph.com.sg/963haofm/",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from SPH Audio day panels (times printed on the page, cross-checked against show pages). Mon-Fri 00:00-06:00 has no show listed and is filled with the station default_program as a template (verified:false). Weekend 18:00-24:00 panel time used; the show page says the evening slot runs to 6AM, which conflicts with the panel's 08:00 end for the next morning - panel time used.",
+      "default_program": "好歌，好FM",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "好歌，好FM",
+          "verified": false,
+          "note": "Template fill: no show listed 00:00-06:00"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "14:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "14:00",
+          "end": "16:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "08:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "08:00",
+          "end": "12:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "18:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "18:00",
+          "end": "24:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "08:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "08:00",
+          "end": "12:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "18:00",
+          "program": "",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "18:00",
+          "end": "24:00",
+          "program": "",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "883jia",
+      "name": "883 JIA",
+      "timezone": "Asia/Singapore",
+      "source_url": null,
+      "last_verified": "2026-11-26",
+      "verification_status": "TEMPLATE - no schedule is published for this station (net radio, no programme list); the whole week is the station default_program, edit manually.",
+      "default_program": "双语第一台，双倍精彩",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "双语第一台，双倍精彩",
+          "verified": false,
+          "note": "Template: no schedule published"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "双语第一台，双倍精彩",
+          "verified": false,
+          "note": "Template: no schedule published"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "双语第一台，双倍精彩",
+          "verified": false,
+          "note": "Template: no schedule published"
+        }
+      ]
+    },
+    {
+      "station_id": "power98",
+      "name": "POWER 98",
+      "timezone": "Asia/Singapore",
+      "source_url": null,
+      "last_verified": "2026-11-26",
+      "verification_status": "TEMPLATE - no schedule is published for this station (net radio, no programme list); the whole week is the station default_program, edit manually.",
+      "default_program": "Power Your Everyday",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "Power Your Everyday",
+          "verified": false,
+          "note": "Template: no schedule published"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "Power Your Everyday",
+          "verified": false,
+          "note": "Template: no schedule published"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "24:00",
+          "program": "Power Your Everyday",
+          "verified": false,
+          "note": "Template: no schedule published"
+        }
+      ]
+    },
+    {
+      "station_id": "myfm",
+      "name": "MY FM",
+      "timezone": "Asia/Kuala_Lumpur",
+      "source_url": "https://my.com.my/my-fm-jiemubiao",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from the official schedule images, cross-checked against the Wikipedia programme tables. Where the image reading and the typed Wikipedia text disagreed on a name, the Wikipedia spelling is used: '今天可以唷' (image read as '今天可以嗨!'), '你识啲咩啊' (image: '你识啲哗啊'), '秉昀说什么蛤？' (image: '秉的说什么?!'). Overnight music blocks are per Wikipedia (official image does not list them) and marked verified:false.",
+      "default_program": "MY FM 好玩",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "05:00",
+          "program": "MY Music Non-Stop",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "05:00",
+          "end": "10:00",
+          "program": "MY FM 阳光灿烂",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "13:00",
+          "program": "MY FM 今天可以唷",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "13:00",
+          "end": "16:00",
+          "program": "MY FM Have a Nice Day",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "MY FM 行路有风",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "MY FM 有点Passion",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "07:00",
+          "program": "MY FM MY Music Non Stop 音乐连环",
+          "verified": false,
+          "note": "Per Wikipedia Sat 22:00-07:00; official image does not list overnight music"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "07:00",
+          "end": "08:00",
+          "program": "MY FM 你识啲咩啊 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "08:00",
+          "end": "09:00",
+          "program": "MY FM 讲真真 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "09:00",
+          "end": "10:00",
+          "program": "MY FM 估你唔到 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "10:00",
+          "end": "11:00",
+          "program": "MY FM 卡通不普通",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "11:00",
+          "end": "13:00",
+          "program": "MY FM Music 20",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "13:00",
+          "end": "14:00",
+          "program": "MY FM 秉昀说什么蛤？",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "15:00",
+          "program": "MY FM 旅游POV & 体育POV (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "15:00",
+          "end": "16:00",
+          "program": "MY FM 看戏就能懂",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "16:00",
+          "end": "17:00",
+          "program": "MY FM 周末Trend一下",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "17:00",
+          "end": "18:00",
+          "program": "MY FM 肯定有料",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "18:00",
+          "end": "19:00",
+          "program": "MY FM RIM劲爆排行榜",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "19:00",
+          "end": "20:00",
+          "program": "MY FM Everyday 一起玩 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "MY FM Music",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "MY FM 有点嘻哈",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "MY FM MY Music Non Stop 音乐连环",
+          "verified": false,
+          "note": "Per Wikipedia Sat 22:00-07:00; official image does not list overnight music"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "07:00",
+          "program": "MY FM MY Music Non Stop 音乐连环",
+          "verified": false,
+          "note": "Continuation of Sat 22:00-07:00 per Wikipedia"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "07:00",
+          "end": "09:00",
+          "program": "MY FM MY Music Non Stop 音乐连环",
+          "verified": false,
+          "note": "Per Wikipedia Sun 07:00-09:00; official image lists 08:00-09:00 as MY FM Music"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "09:00",
+          "end": "10:00",
+          "program": "MY FM 一首好听的广东歌",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "12:00",
+          "program": "MY FM 俾D意见我 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "13:00",
+          "program": "MY FM 有点Crazy (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "13:00",
+          "end": "14:00",
+          "program": "MY FM 一秒就出片",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "15:00",
+          "program": "MY FM RIM 劲爆排行榜 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "15:00",
+          "end": "16:00",
+          "program": "MY FM 周末睇咩睇",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "16:00",
+          "end": "18:00",
+          "program": "MY FM Sunday Like That",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "18:00",
+          "end": "19:00",
+          "program": "MY FM 今天也有好好聊天 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "19:00",
+          "end": "21:00",
+          "program": "MY FM Music 20 (重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "MY FM Music",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "MY FM MY Music Non Stop 音乐连环",
+          "verified": false,
+          "note": "Per Wikipedia Sun 21:00-05:00; official image does not list overnight music"
+        }
+      ]
+    },
+    {
+      "station_id": "melody",
+      "name": "MELODY",
+      "timezone": "Asia/Kuala_Lumpur",
+      "source_url": "https://melody.my/schedule-melody",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from the official schedule page text. Overnight programmes are split at midnight: Mon 00:00-06:00 is the Sunday 12:00-06:00 周末音乐加油站, Tue-Fri 00:00-06:00 is the previous night's 音乐会说话, Sat 00:00-06:00 is the Friday night 音乐会说话, Sun 00:00-06:00 is the Saturday 14:00-06:00 周末音乐加油站. Short inserts inside a main programme (e.g. 黄隽斌财汇说 at 9am/2pm/7pm Mon-Fri) are not separate entries.",
+      "default_program": "强打好歌，强大资讯",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true,
+          "note": "Continuation of Sun 12:00-06:00"
+        },
+        {
+          "days": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "MELODY 音乐会说话",
+          "verified": true,
+          "note": "Continuation of previous night 20:00-06:00"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "MELODY 音乐会说话",
+          "verified": true,
+          "note": "Continuation of Fri 20:00-06:00"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "06:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true,
+          "note": "Continuation of Sat 14:00-06:00"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "MELODY 早晨有意思",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "10:00",
+          "end": "13:00",
+          "program": "MELODY 关腔时间",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "13:00",
+          "end": "16:00",
+          "program": "MELODY 鎂日好鑫情",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "MELODY 放工大过天",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "24:00",
+          "program": "MELODY 音乐会说话",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "06:00",
+          "end": "10:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "10:00",
+          "end": "11:00",
+          "program": "MELODY 小马一企谈 (完整重播）",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "11:00",
+          "end": "12:00",
+          "program": "MELODY 女神经 (完整重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "MELODY 全场大合唱",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "24:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "06:00",
+          "end": "08:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "08:00",
+          "end": "10:00",
+          "program": "MELODY 八九巨好听",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "11:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "12:00",
+          "program": "MELODY 黄隽斌财汇说 (完整重播)",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "24:00",
+          "program": "MELODY 周末音乐加油站",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "goxuan",
+      "name": "goxuan",
+      "timezone": "Asia/Kuala_Lumpur",
+      "source_url": "https://goxuan.com.my/schedule-goxuan",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from the official schedule images. The images name only the shows listed; all other hours are shown as unnamed Music, filled here with 'GOXUAN Music Non Stop' as a template (verified:false). Note: third-party EPG listings show named daytime weekend shows (Sat It's a Vibe / Blind Boxes, Sun Youth Course / Real or Not) that the official images do not name - check and correct those slots if you want the named shows.",
+      "default_program": "Be Your Own Trend",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "07:00",
+          "program": "GOXUAN Music Non Stop",
+          "verified": false,
+          "note": "Template fill: official image shows unnamed Music"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "07:00",
+          "end": "11:00",
+          "program": "GOXUAN Rising Hour",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "11:00",
+          "end": "16:00",
+          "program": "GOXUAN Music Non Stop",
+          "verified": false,
+          "note": "Template fill: official image shows unnamed Music"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "20:00",
+          "program": "GOXUAN Magic Hour",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "GOXUAN Fans of the day",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "GOXUAN Playlist of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "program": "GOXUAN Idol of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "GOXUAN MC of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "18:00",
+          "program": "GOXUAN Music Non Stop",
+          "verified": false,
+          "note": "Template fill: official image shows unnamed Music"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "18:00",
+          "end": "20:00",
+          "program": "GOXUAN 20",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "GOXUAN Fans of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "GOXUAN Playlist of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "program": "GOXUAN Idol of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "GOXUAN MC of the Day",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "10:00",
+          "program": "GOXUAN Music Non Stop",
+          "verified": false,
+          "note": "Template fill: official image shows unnamed Music"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "12:00",
+          "program": "GOXUAN 20",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "20:00",
+          "program": "GOXUAN Music Non Stop",
+          "verified": false,
+          "note": "Template fill: official image shows unnamed Music"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "GOXUAN Fans of the day",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "program": "GOXUAN Playlist of the day",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "program": "GOXUAN Idol of the day",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "GOXUAN MC of the Day",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "station_id": "hitfm",
+      "name": "HitFM",
+      "timezone": "Asia/Taipei",
+      "source_url": "https://www.hitoradio.com/newweb/schedule.php",
+      "last_verified": "2026-11-26",
+      "verification_status": "READ 2026-11-26 from the hitoradio.com 北部 (n1077) grid only; the other four regions (中部/南部/宜蘭/花東) are not used. Mon 00:00-02:00 is taken as HITO NON-STOP and Fri-night 夜貓DJ Dennis as 23:00-24:00, because Sat and Sun 00:00-02:00 are HITO NON-STOP even though the Mon-Fri pattern reads 23:00-02:00 - those two boundary entries are marked verified:false.",
+      "default_program": "只想听音乐",
+      "exceptions": [],
+      "weekly": [
+        {
+          "days": [
+            1
+          ],
+          "start": "00:00",
+          "end": "02:00",
+          "program": "HITO NON-STOP",
+          "verified": false,
+          "note": "Boundary interpretation: Sun column 00:00-02:00 is HITO NON-STOP"
+        },
+        {
+          "days": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "00:00",
+          "end": "02:00",
+          "program": "夜貓DJ Dennis",
+          "verified": true,
+          "note": "Continuation of previous night 23:00-02:00"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "00:00",
+          "end": "02:00",
+          "program": "HITO NON-STOP",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "02:00",
+          "program": "HITO NON-STOP",
+          "verified": true
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "02:00",
+          "end": "05:00",
+          "program": "流行最前線",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "05:00",
+          "end": "06:00",
+          "program": "只想聽音樂",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "05:00",
+          "end": "09:00",
+          "program": "只想聽音樂",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "05:00",
+          "end": "09:00",
+          "program": "只想聽音樂",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "07:00",
+          "program": "嗆新聞 /Phoenix嗆新聞",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            3,
+            5
+          ],
+          "start": "07:00",
+          "end": "08:00",
+          "program": "嗆新聞 / 黃揚明嗆新聞",
+          "verified": true
+        },
+        {
+          "days": [
+            2,
+            4
+          ],
+          "start": "07:00",
+          "end": "08:00",
+          "program": "嗆新聞 / 陳家頤嗆新聞",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "08:00",
+          "end": "09:00",
+          "program": "嗆新聞 / 黃暐瀚撞新聞",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "09:00",
+          "end": "12:00",
+          "program": "活力DJ 阿娟",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "12:00",
+          "end": "14:00",
+          "program": "翹班DJ GJ蔣卓嘉",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "14:00",
+          "end": "16:00",
+          "program": "午茶DJ- SoWhat",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "16:00",
+          "end": "18:00",
+          "program": "不累DJ Bibi趙之璧",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "18:00",
+          "end": "19:00",
+          "program": "ciao俏 DJ(代班)- Bibi趙之璧",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "19:00",
+          "end": "21:00",
+          "program": "耐玩DJ Bryan",
+          "verified": true
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "19:00",
+          "end": "20:00",
+          "program": "HITO中文排行榜",
+          "verified": true
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "program": "耐玩DJ Bryan",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "program": "OH夜DJ - waa魏如萱",
+          "verified": true
+        },
+        {
+          "days": [
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "program": "OH YA DJ - 木木",
+          "verified": true
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "23:00",
+          "end": "24:00",
+          "program": "夜貓DJ Dennis",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "09:00",
+          "end": "12:00",
+          "program": "賴床DJ- Phoenix",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "09:00",
+          "end": "12:00",
+          "program": "賴床DJ- Phoenix",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "12:00",
+          "end": "13:00",
+          "program": "HITO西洋排行榜 elsa",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "13:00",
+          "program": "HITO日亞排行榜 elsa",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "13:00",
+          "end": "14:00",
+          "program": "HIT週末! GiGi",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "13:00",
+          "end": "14:00",
+          "program": "HIT週末! GiGi",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "嗑音樂 Kris",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "program": "嗑音樂 Austin",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "17:00",
+          "end": "18:00",
+          "program": "HIT DJ-吳申梅",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "17:00",
+          "end": "18:00",
+          "program": "HIT DJ-YoungLee",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "18:00",
+          "end": "20:00",
+          "program": "HITO唱片行 克里斯",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "18:00",
+          "end": "20:00",
+          "program": "HITO唱片行 克里斯",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "22:00",
+          "program": "HEY！MISS DJ elsa",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "20:00",
+          "end": "22:00",
+          "program": "ROCK DJ ciacia",
+          "verified": true
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "HITO LATE NIGHT SHOW - 馬念先 、 奇哥",
+          "verified": true
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "22:00",
+          "end": "24:00",
+          "program": "LOVE DJ- Christine",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
