@@ -4,7 +4,7 @@
   "repo": "evan8686/drive-time-radio-config",
   "source": "upload.xlsx Sheet1, 12 stations",
   "stations_url": "https://raw.githubusercontent.com/evan8686/drive-time-radio-config/main/radio/stations.json",
-  "logo_base_url": "https://raw.githubusercontent.com/evan8686/drive-time-radio-config/main/logo/",
+  "logo_base_url": ""https://cdn.jsdelivr.net/gh/evan8686/drive-time-radio-config@main/logo/"",
   "logo_dir_relative_to_this_file": "../logo",
   "notes": [
     "logo 字段只填文件名。logo 实际放在仓库的 logo/ 目录，App 按 logo_base_url + logo 拼出完整地址，或按相对路径 ../logo/<文件名> 解析。本文件预定放在仓库的 radio/ 目录（radio/stations.json），该目录目前只有 .gitkeep。",
